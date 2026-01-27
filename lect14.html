@@ -6,6 +6,9 @@
     <title>Document</title>
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         #about {
             background-image:
             linear-gradient(rgba(255,0,0,0.3), rgba(0, 255, 213, 0.3)),
@@ -23,12 +26,66 @@
                     overflow: auto;
                     box-sizing: border-box;
         }
+
+        #backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+  transform: scale(1.1);
+  background-color: #333;
+}
+
     </style>
 </head>
 <body>
+    <div>
+        Home , <a href="#about">About</a>, Resume 
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quo pariatur sunt quidem, voluptatum, error aut a voluptates placeat maxime aliquid saepe et dolor, laudantium blanditiis corrupti eveniet omnis! Voluptatem architecto culpa ipsum quae, ut reprehenderit temporibus dolor quasi earum ipsa nulla cumque, illo quibusdam totam ab esse, omnis nostrum facilis aliquam in recusandae! Ipsa cupiditate, iure tempore at suscipit repellat modi aut officiis est, amet qui facilis error, quas maiores! Illum itaque alias iure dolorem expedita dicta perferendis asperiores hic, quos ducimus placeat dolore libero autem dolor aliquid delectus voluptatum? Praesentium officia quas at rerum numquam. Sequi obcaecati fugit magni hic veritatis ex explicabo esse quae, est sit iure voluptatibus maxime reiciendis commodi possimus rem? Fugiat nisi ipsam officiis quam in delectus aliquid minima quae architecto autem, nesciunt recusandae voluptas itaque rerum sequi est adipisci? Dolorem magnam repellat obcaecati explicabo suscipit aliquid officia temporibus tenetur voluptatem delectus fuga commodi maxime quisquam quae odio, ratione numquam vitae accusantium consequuntur soluta harum itaque corrupti illum? Sapiente neque minus aut? Vitae rerum deleniti sequi molestias quidem ullam libero et voluptate minus! Ipsa libero nisi totam fuga sint, suscipit facere officiis. Sapiente, ratione? Quos eius quis aliquam consequuntur corrupti enim nemo deserunt veritatis, officiis beatae culpa fugit fuga facere perspiciatis ducimus repellendus quibusdam soluta aspernatur facilis quam alias vero, cum expedita hic? Doloribus, quisquam nesciunt. Quidem atque eveniet amet architecto. Rem illum, accusamus minima saepe, at molestias culpa temporibus laborum numquam sit quia! Sint pariatur voluptatibus a vitae aperiam dolorum dolore in reprehenderit officiis voluptatum inventore ipsum, asperiores sed ad mollitia magnam ullam sapiente adipisci eaque et. Mollitia sequi eius ipsa officiis, sed eveniet? Dolorem repellat eveniet sunt ea libero eum dolores facere! Laboriosam libero totam accusantium nam doloremque atque. Quia incidunt quis delectus? Ratione dicta voluptas similique reprehenderit aliquam? Porro ea blanditiis ipsum, dolorum nobis corporis quas, voluptatibus, quia quidem quo labore? Minus accusantium vel, magnam sunt, ipsum repellat veritatis perspiciatis porro facilis, inventore officiis optio fuga! Aliquam ducimus facere, earum blanditiis eligendi officiis enim veniam eius fugiat! Beatae cum voluptatum molestiae alias placeat nam eum neque, minus autem explicabo sequi velit, deleniti accusantium eligendi ducimus ipsum quis adipisci aspernatur suscipit unde ipsam? Dolor soluta molestias iure perferendis provident ullam repellat officia esse, enim alias, sapiente quas error eum est eius beatae nostrum, a sed earum quae! Magnam nostrum nobis labore a dolores voluptatem deserunt at quas error tempora assumenda nemo officia fuga, quia ex, temporibus sunt alias nihil sit voluptas minus illum necessitatibus itaque. Odio quaerat sapiente ducimus enim debitis natus autem possimus vitae, quidem, accusantium quas animi tempora minima corrupti architecto pariatur perferendis nobis at cumque dignissimos libero modi! Ipsum voluptatum, eos magni veniam asperiores eius officiis in fugiat delectus quo, error recusandae ullam id consequuntur nulla voluptatibus non molestias. Quae nemo asperiores quod culpa incidunt, impedit numquam consequatur cumque ut accusamus tempora nostrum non qui, animi enim aut a temporibus assumenda officiis maiores laborum voluptatem. Ipsum tempore ducimus cupiditate doloremque ab rem facere expedita, dolorum unde minima earum necessitatibus laboriosam in repellat. Minus dolorum dolore delectus natus excepturi, possimus facilis ab quas aperiam nihil ut vel impedit enim corporis voluptas ad cumque repudiandae! Voluptatibus facilis nemo odit aut eaque inventore possimus praesentium labore ad laborum temporibus at sint veritatis quas, magnam commodi. Vitae nulla aut amet molestiae ab repellendus placeat, libero eos mollitia aperiam praesentium ut blanditiis numquam animi debitis dolores beatae recusandae sit sed illo pariatur, nisi soluta sint voluptatum? Rem quos aspernatur similique ut nihil nesciunt id expedita quis, numquam quia quibusdam ex minima magni dolor iste veritatis dolores placeat dolorem est! Voluptas molestiae et maxime velit nemo adipisci dicta sapiente quidem quam eum nihil id, earum, quaerat molestias obcaecati porro commodi ipsam, quis autem aspernatur nisi cum voluptatem tempore! Repellendus quo recusandae odio dolorem doloremque minima error libero voluptate. Qui quisquam quis sit itaque eum provident esse nostrum eos reiciendis eligendi doloremque voluptate nemo, error ab est ipsam earum, ullam aspernatur nulla blanditiis in officia vel facilis illum! Sequi illo quae facilis labore distinctio quaerat asperiores quisquam deleniti quia earum nesciunt animi quas cupiditate molestias, aperiam magni maxime necessitatibus quod sapiente ab ipsam eveniet dicta dolores? Consectetur, necessitatibus aperiam officiis in maiores fugiat recusandae illum, ducimus fuga quas ex excepturi non sed cumque hic eius, nulla et neque? Ullam, maiores similique consequatur nulla dignissimos, nemo aspernatur minima excepturi possimus voluptatibus tempora? Enim nobis voluptates labore esse aperiam modi repudiandae quos cupiditate magnam, nihil numquam ducimus quaerat maiores sit. Expedita atque et similique accusamus natus suscipit error iusto ab pariatur laudantium ad maiores illo commodi voluptas optio perferendis sint, enim quae a fugiat ipsum eaque, corporis esse? Aperiam, odio recusandae sunt aspernatur placeat consequatur esse? Harum optio, doloremque veniam cum odio voluptas non distinctio itaque voluptatibus, voluptatum voluptates, corrupti veritatis dolorem error repudiandae porro odit sunt. Facilis aperiam quas consequatur architecto sapiente reprehenderit sed! Reiciendis voluptates at esse architecto enim temporibus hic ratione accusamus asperiores, dolores, labore aspernatur quae, neque adipisci! Quo illum pariatur ducimus! Distinctio accusantium aliquid obcaecati odio dolores iste voluptate, cupiditate maiores libero perspiciatis omnis quibusdam. Harum aut necessitatibus eligendi soluta nostrum, magni vitae iste sed voluptas rem quia illum nesciunt tempore. Eos necessitatibus eveniet quasi vitae reiciendis vel quidem illo voluptates laudantium perferendis aut exercitationem similique voluptatibus iusto nemo, neque rerum sint officia odit dolor. Inventore officia, officiis nisi veniam corrupti, doloribus, molestias odio impedit commodi optio nihil. Labore officiis, nostrum quibusdam quidem quos voluptatibus alias reiciendis voluptatum est veniam ipsum dolore delectus sequi mollitia beatae magnam ut, maxime perspiciatis! Perspiciatis quisquam voluptates animi odio, debitis ipsam repellat, soluta mollitia ipsa laudantium voluptatum voluptas saepe repellendus maxime numquam aliquid quibusdam, quos esse impedit quae ex quia culpa! Temporibus, dicta optio quas commodi consectetur distinctio. Quis porro impedit, quibusdam consectetur fugit consequuntur harum expedita praesentium tenetur, nemo, ullam facilis dicta aliquid eius saepe reiciendis quas perspiciatis illo! Qui fuga ipsum quibusdam illum quaerat dignissimos, perferendis nisi cumque fugiat nulla veniam sed sequi molestias quod voluptatum cupiditate accusantium quas facilis nesciunt! Vitae cupiditate perferendis tenetur.</p>
+    </div>
     <div id="about">
     <h1>About</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt inventore eligendi magni itaque ipsum saepe cum culpa similique possimus porro, nisi nesciunt quod eveniet consectetur impedit placeat odit quos quas.</p>
     </div>
+
+    <button id="backToTop" title="Back to top">↑</button>
+
+
+
+
+    <script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
 </body>
 </html>
