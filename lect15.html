@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .btn {
+        background-color: rgb(3, 119, 3);
+    color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 12px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+       background-color: rgb(2, 100, 2);
+         box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    transform: translate(1px, 1px);
+    }
+</style>
+</head>
+<body>
+
+
+    <div>
+        <h1 id="demo">Pakistan</h1>
+
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Current Date And time</button>
+    </div>
+
+
+
+    <div>
+    <!-- <button >Submit</button>
+    <button disabled>Submit</button> -->
+    <button type="button" class="btn" onclick="alert('This is ok message')" >Submit</button>
+
+    <button type="submit">Save</button>
+    <button type="reset">Clear</button>
+
+        <a href="#" class="btn">Delete</a>
+
+
+      <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+        <iframe src="/lect12.html" style="width: 300px; height: 200px;" frameborder="0"></iframe>
+
+        
+        <iframe
+  src="https://www.google.com/maps?q=New+York+City&output=embed"
+  width="300"
+  height="200"
+  style="border:0;"
+  loading="lazy">
+</iframe>
+
+<script>
+    document.getElementById("demo").innerHTML="Balochistan"
+    document.getElementById("demo").style.color="red"
+
+</script>
+    </body>
+</html>
