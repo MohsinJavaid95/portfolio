@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       .left, .right {
+        width: 20%;
+        float:left;
+        padding: 20px;
+        box-sizing: border-box;
+       }
+
+       .main{
+        width: 60%;
+        float:left;
+         padding: 20px;
+         box-sizing: border-box;
+       }
+ 
+
+       /* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .right {
+    display: none;
+  }
+}
+    </style>
+</head>
+<body>
+    
+    <div>
+        <!-- <img src="/images/123.jpg" alt="" width="100%"> -->
+         <!-- <img src="images/123.jpg" style="max-width:100%;height:auto;"> -->
+   
+        <!-- <h1 style="font-size: 10vw;">About ME</h1> -->
+        </div>
+
+        <div style="background-color:red;" class="left">
+            left
+        </div>
+        <div style="background-color: gray;" class="main">
+            main
+        </div>
+        <div style="background-color: black;" class="right">
+            right
+        </div>
+</body>
+</html>
