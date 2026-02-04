@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .regForm {
+            margin:0 auto;
+            width:500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="regForm">
+        <h1>Create a new account</h1>
+        <form action="#" method="post">
+            <fieldset> 
+                <legend>Create Account</legend>
+          
+            <label for="name">First Name:</label> <br>
+            <input type="text" id="name" name="name" placeholder="Enter Name" value="Ali Nasar" required> <br> <br>
+            <input type="password" name="password" id="password" placeholder="Enter Password"> <br> <br>
+            <input type="email" name="email" id="email" placeholder="Enter email"> <br> <br>
+            <label for="gender">Select Gender</label> <br>
+            Male <input type="radio" name="gender" id="gender">
+           Female <input type="radio" name="gender" id="gender"> <br><br>
+             <label for="role">Select Role</label> <br>
+            <input type="checkbox" name="admin" id="admin"> Admin
+            <input type="checkbox" name="manager" id="manager"> Manager
+            <input type="checkbox" name="user" id="user"> User <br><br>
+
+            <button type="submit">Sumbit</button>
+            <button type="reset">Clear</button>
+  </fieldset>
+        </form>
+
+    </div>
+</body>
+</html>
