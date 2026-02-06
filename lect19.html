@@ -14,14 +14,16 @@
 <body>
     <div class="regForm">
         <h1>Create a new account</h1>
-        <form action="#" method="post">
+        <form action="/lect18.html" method="post" target="_blank" autocomplete="on" novalidate>
             <fieldset> 
                 <legend>Create Account</legend>
           
             <label for="name">First Name:</label> <br>
-            <input type="text" id="name" name="name" placeholder="Enter Name" value="Ali Nasar" required> <br> <br>
-            <input type="password" name="password" id="password" placeholder="Enter Password"> <br> <br>
-            <input type="email" name="email" id="email" placeholder="Enter email"> <br> <br>
+            <input type="text" id="name" name="name" placeholder="Enter Name" value="Ali Nasar" disabled required style="width:200px;"> <br> <br>
+                <label for="lname">Last Name:</label> <br>
+            <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required size="20"> <br> <br>
+            <input type="password" name="password" id="password" placeholder="Enter Password" minlength="8" maxlength="20"> <br> <br>
+            <input type="email" name="email" id="email" placeholder="Enter email" readonly> <br> <br>
             <label for="gender">Select Gender</label> <br>
             Male <input type="radio" name="gender" id="gender">
            Female <input type="radio" name="gender" id="gender"> <br><br>
@@ -29,8 +31,40 @@
             <input type="checkbox" name="admin" id="admin"> Admin
             <input type="checkbox" name="manager" id="manager"> Manager
             <input type="checkbox" name="user" id="user"> User <br><br>
-
-            <button type="submit">Sumbit</button>
+         <label for="">DOB</label>
+         <input type="file">
+         <input type="hidden" id="id">
+            <input type="date" name="DOB" id="DOB">
+            <label for="skills">Select Skills</label><br>
+            
+            <select name="skills" id="skills" size="6" multiple><br>
+                <option value="">--Select--</option>
+                <option value="Networking">Networking</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Programming" selected>Programming</option>
+                <option value="Graphics">Graphics</option>
+               
+             </select>    <br><br>
+             <label for="about">About Me</label><br>
+             <textarea name="about" id="about" rows="5" cols="25"></textarea>
+            <br><br>
+            <input type="month">
+              <input list="browsers">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <br> <br>
+   <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+  <input type="number" id="a" name="a">
+  <input type="range"><br><br>
+   <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+             <button type="submit">Sumbit</button>
             <button type="reset">Clear</button>
   </fieldset>
         </form>
